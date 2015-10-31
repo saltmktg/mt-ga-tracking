@@ -25,7 +25,7 @@ Check out [tracking-code-isolated.html](https://github.com/saltmktg/mt-ga-tracki
 
 ##### Not Working in Internet Explorer
 
-Once again, this all works how we want it to - *except in Internet Explorer*. For whatever reason, in IE, the GA tracking parameters don't get thrown onto the end of the iframe `src`. **This is where we need help.** We need someone to get the GA tracking parameters to populate at the end of each form's iframe `src` in Internet Explorer. For testing purposes, if you can get it to work on each form iframe on the following pages in IE, we should be in good shape:
+Once again, this all works how we want it to - *except in Internet Explorer*. For whatever reason, in IE, the GA tracking parameters don't get thrown onto the end of the iframe `src`. **This is where we need help.** We need someone to get the GA tracking parameters to populate at the end of each form's iframe `src` in Internet Explorer. For testing purposes, if you can get it to work on each form's iframe on the following pages in IE, we should be in good shape:
 
 - http://meetingtomorrow.com/nationwide-rentals
 - http://meetingtomorrow.com/contact
