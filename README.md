@@ -37,7 +37,7 @@ Once again, this all works how we want it to - *except in Internet Explorer*. Fo
 - http://meetingtomorrow.com/contact
 - http://meetingtomorrow.com/chicago-audio-visual-rentals
 
-Remember, there are always at least 2 forms on every page - the "Request a Free Quote" sidetab form, and the Exit Intent form, which only gets triggered on a first visit or in Chrome's "Incognito Mode."
+Recall, there are always at least 2 forms on every page: the "Request a Free Quote" sidetab form and the Exit Intent form (which only gets triggered on a first visit or in Chrome's "Incognito Mode").
 
 ##### Questions & Comments
 
