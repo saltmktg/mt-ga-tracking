@@ -2,11 +2,11 @@
 
 This repository contains pieces of code being used on the Meeting Tomorrow website: http://meetingtomorrow.com
 
-The goal of the code is to attach Google Analytics (GA) tracking parameters to the end of the `src` for several iframes. When the code works, you can "Inspect Element" on the iframe `src`, double-click into the `src` and see something like this (notice the GA tracking parameters placed into the end - things like `custentity_ga_search_campaign` and `custentity_ga_search_source`):
+The goal of the code is to attach Google Analytics (GA) tracking parameters to the end of the `src` for several iframes. When the code works, you can "Inspect Element" on the iframe `src`, double-click into the `src` and see something like this (notice the GA tracking parameters placed onto the end - things like `custentity_ga_search_campaign` and `custentity_ga_search_source`):
 
 ![iframe screenshot](http://s17.postimg.org/q2w0gc7fz/iframe_screenshot.png)
 
-If you want to see it for yourself, you can [view this page](http://meetingtomorrow.com/contact) and follow the steps listed above ("Inspect Element" on the form and double-click into the iframe `src`).
+If you want to see it for yourself, you can [view this page](http://meetingtomorrow.com/contact) on the Meeting Tomorrow site and follow the steps listed above ("Inspect Element" on the form and double-click into the iframe `src`).
 
 If you need another example, you can also [visit this page](http://www.insureonthespot.com/autoinsurancequote), enter a zip code into the form in the lefthand sidebar, press "Go", "Inspect Element" on the iframe of the form in the middle of the page, and then double-click into the iframe `src` (see screenshot below).
 
@@ -14,7 +14,7 @@ If you need another example, you can also [visit this page](http://www.insureont
 
 ### The Problem
 
-The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. Since 15-20% of the site's visitors use Internet Explorer, it needs to work for those users as well.
+The problem is that the code we're using to do this on the Meeting Tomorrow site *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. Since 15-20% of the site's visitors use Internet Explorer, it needs to work for those users as well.
 
 ### About the Code
 
@@ -37,6 +37,8 @@ Once again, this all works how we want it to - *except in Internet Explorer*. Fo
 - http://meetingtomorrow.com/contact
 - http://meetingtomorrow.com/chicago-audio-visual-rentals
 
-##### Questions & Feedback
+Again, there are always at least 2 forms on every page - the "Request a Free Quote" sidetab form, and the Exit Intent form, which only gets triggered on a first visit or in Chrome's "Incognito Mode."
+
+##### Questions & Comments
 
 Please direct questions or comments on the project to rkarpeles[at]saltdigitalmarketing.com
