@@ -14,11 +14,12 @@ The problem is that the code we're using to do this *doesn't* work in Internet E
 
 The original code comes from this blog post here: http://cutroni.com/blog/2009/03/18/updated-integrating-google-analytics-with-a-crm/
 
-We've adapted it to fit our site, and we're also using it to append the GA tracking parameters to at least 2 different iframes on the same page - and sometimes 3 different iframes. For example, look at this page here: http://meetingtomorrow.com/contact  On this page there 3 iframes (which are used to display forms):
+We've adapted it to fit our site, and we're also using it to append the GA tracking parameters to at least 2 different iframes on the same page - and sometimes 3 different iframes. For example, look at this page here: http://meetingtomorrow.com/contact On this page there are 3 iframes (which are used to display 3 different forms):
 
-- The main form in the middle of the page
-- If you click the "Request a Free Quote" sidetab, you'll see another form (i.e. iframe)
-- If you visit the site for the first time (or in Chrome's "Incognito Mode"), and you move your cursor into the browser bar at the top, you'll see an Exit Intent form appear. This is also another separate iframe.
+1. The main form in the middle of the page
+2. If you click the "Request a Free Quote" sidetab, you'll see another form (i.e. iframe)
+3. If you visit the site for the first time (or in Chrome's "Incognito Mode"), and you move your cursor into the browser bar at the top, you'll see an Exit Intent form appear. This is also another separate iframe.
 
-
+##### How the Code Works
+Check out [tracking-code-isolated.html](https://github.com/saltmktg/mt-ga-tracking/blob/master/tracking-code-isolated.html) to see the main snippet of code. In essence, what it's doing is grabbing GA tracking cookies from the visitor, and then dumping them into hidden fields, which get populated into the iframe `src`. This gets triggered by a line of code (line 1409 in header.php): ```<body onload="populateHiddenFields(document.forms['ga-tracking-form'])">```
 
