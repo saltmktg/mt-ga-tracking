@@ -23,5 +23,10 @@ We've adapted it to fit our site, and we're also using it to append the GA track
 ##### How the Code Works
 Check out [tracking-code-isolated.html](https://github.com/saltmktg/mt-ga-tracking/blob/master/tracking-code-isolated.html) to see the main snippet of code. In essence, what it's doing is grabbing GA tracking cookies from the visitor, and then dumping them into hidden fields, which get populated into the iframe `src`. This gets triggered by a line of code (line 1409 in [header.php](https://github.com/saltmktg/mt-ga-tracking/blob/master/header.php)): ```<body onload="populateHiddenFields(document.forms['ga-tracking-form'])">```
 
-Once again, this all works how we want it to - *except in Internet Explorer*. For whatever reason, in IE, the GA tracking parameters don't get thrown onto the end of the iframe `src`. **This is where we need help.** 
+##### Not Working in Internet Explorer
 
+Once again, this all works how we want it to - *except in Internet Explorer*. For whatever reason, in IE, the GA tracking parameters don't get thrown onto the end of the iframe `src`. **This is where we need help.** We need someone to get the GA tracking parameters to populate at the end of each form's iframe `src` in Internet Explorer. For testing purposes, if you can get it to work on each form iframe on the following pages in IE, we should be in good shape:
+
+- http://meetingtomorrow.com/nationwide-rentals
+- http://meetingtomorrow.com/contact
+- http://meetingtomorrow.com/chicago-audio-visual-rentals
