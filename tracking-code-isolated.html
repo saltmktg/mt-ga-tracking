@@ -97,7 +97,9 @@
         // Script will check to see if the element exists. If it doesn't, the parameters won't be
         // added for that element AND any of the following elements below it.
         // Since nsIframeSidetab and nsExitIntent will be on every page, keep those first. nsIframe goes last
-        // because it's only on certain pages.             
+        // because it's only on certain pages.
+        // WE COULD POTENTIALLY REWRITE THIS TO USE "if" STATEMENTS, SO THAT THE CODE IS INDEPENDENT
+        // OF THE NUMBER OF FORMS ON THE PAGE
 
         document.getElementById("nsIframeSidetab").src = document.getElementById("nsIframeSidetab").src + '&custentity_ga_search_campaign=' + encodeURIComponent(f.campaign.value) + '&custentity_ga_search_source=' + encodeURIComponent(f.source.value) + '&custentity_ga_search_medium=' + encodeURIComponent(f.medium.value) + '&custentity_ga_search_keyword=' + encodeURIComponent(f.term.value) + '&custentity_ga_search_content=' + encodeURIComponent(f.content.value) + '&custentity_ga_search_gclid=' + encodeURIComponent(f.gclid.value);
 
