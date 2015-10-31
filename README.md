@@ -8,7 +8,7 @@ The goal of the code is to attach Google Analytics (GA) tracking parameters to t
 
 ### The Problem
 
-The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. And since 15-20% of the site's visitors use Internet Explorer, it needs to work for them.
+The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. Since 15-20% of the site's visitors use Internet Explorer, it needs to work for those users as well.
 
 ### About the Code
 
@@ -22,12 +22,3 @@ We've adapted it to fit our site, and we're also using it to append the GA track
 
 
 
-
-
-
-
-
-
-Original source code: 
-
-Body onload 
