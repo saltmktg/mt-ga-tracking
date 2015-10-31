@@ -6,6 +6,10 @@ The goal of the code is to attach Google Analytics (GA) tracking parameters to t
 
 ![iframe screenshot](http://s17.postimg.org/q2w0gc7fz/iframe_screenshot.png)
 
+If you need another example, you can also [visit this page](http://www.insureonthespot.com/autoinsurancequote), enter a zip code into the form in the lefthand sidebar, press "Go", "Inspect Element" on the iframe of the form in the middle of the page, and then double-click into the iframe `src` (see screenshot below).
+
+![iframe screenshot](http://s13.postimg.org/b73vak913/screenshot2.png)
+
 ### The Problem
 
 The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. Since 15-20% of the site's visitors use Internet Explorer, it needs to work for those users as well.
