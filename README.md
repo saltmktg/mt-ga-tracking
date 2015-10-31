@@ -2,13 +2,13 @@
 
 This repository contains pieces of code being used on the Meeting Tomorrow website: http://meetingtomorrow.com
 
-The goal of the code is to attach Google Analytics (GA) tracking parameters to the end of the `src` for several iframe URLs. That way When the code works, you can "Inspect Element" on the iframe `src`, double-click into the `src` and see something like this (notice the GA tracking parameters placed into the end of the URL):
+The goal of the code is to attach Google Analytics (GA) tracking parameters to the end of the `src` for several iframe URLs. When the code works, you can "Inspect Element" on the iframe `src`, double-click into the `src` and see something like this (notice the GA tracking parameters placed into the end of the URL - things like `custentity_ga_search_medium` and `custentity_ga_search_campaign`):
 
 ![iframe screenshot](http://s17.postimg.org/q2w0gc7fz/iframe_screenshot.png)
 
 ### The Problem
 
-The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It works in Chrome, Firefox, Safari - but no IE. Since 15-20% of our visitors use Internet Explorer, we need to make it work for them.
+The problem is that the code we're using to do this *doesn't* work in Internet Explorer. It only works in Chrome, Firefox, and Safari - but no IE. And since 15-20% of the site's visitors use Internet Explorer, it needs to work for them.
 
 ### About the Code
 
