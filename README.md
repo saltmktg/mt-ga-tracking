@@ -30,3 +30,7 @@ Once again, this all works how we want it to - *except in Internet Explorer*. Fo
 - http://meetingtomorrow.com/nationwide-rentals
 - http://meetingtomorrow.com/contact
 - http://meetingtomorrow.com/chicago-audio-visual-rentals
+
+##### Questions & Feedback
+
+Please direct questions or comments on the project to rkarpeles[at]saltdigitalmarketing.com
