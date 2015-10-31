@@ -27,7 +27,7 @@ We've adapted it to fit our site, and we're also using it to append the GA track
 3. If you visit the site for the first time (or in Chrome's "Incognito Mode"), and move your cursor into the browser bar at the top, you'll see an Exit Intent form appear. This is also another separate iframe.
 
 ##### How the Code Works
-Check out [tracking-code-isolated.html](https://github.com/saltmktg/mt-ga-tracking/blob/master/tracking-code-isolated.html) to see the main snippet of code. In essence, what it's doing is grabbing GA tracking cookies from the visitor, and then dumping them into hidden fields, which get populated into the iframe `src`. This gets triggered by a line of code (line 1409 in [header.php](https://github.com/saltmktg/mt-ga-tracking/blob/master/header.php)): ```<body onload="populateHiddenFields(document.forms['ga-tracking-form'])">```
+Check out [tracking-code-isolated.html](https://github.com/saltmktg/mt-ga-tracking/blob/master/tracking-code-isolated.html) to see the main snippet of code. In essence, what it's doing is grabbing GA tracking cookies from the visitor, and then dumping them into hidden fields, which get populated into the iframe `src`. This gets triggered on each iframe by a line of code (line 1409 in [header.php](https://github.com/saltmktg/mt-ga-tracking/blob/master/header.php)): ```<body onload="populateHiddenFields(document.forms['ga-tracking-form'])">```
 
 ##### Not Working in Internet Explorer
 
