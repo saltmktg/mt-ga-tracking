@@ -6,7 +6,7 @@ The goal of the code is to attach Google Analytics (GA) tracking parameters to t
 
 ![iframe screenshot](http://s17.postimg.org/q2w0gc7fz/iframe_screenshot.png)
 
-If you want to see it for yourself, you can [view this page](http://meetingtomorrow.com/contact) and follow the steps listed above (Inspect Element and double-click into the iframe `src`).
+If you want to see it for yourself, you can [view this page](http://meetingtomorrow.com/contact) and follow the steps listed above ("Inspect Element" on the form and double-click into the iframe `src`).
 
 If you need another example, you can also [visit this page](http://www.insureonthespot.com/autoinsurancequote), enter a zip code into the form in the lefthand sidebar, press "Go", "Inspect Element" on the iframe of the form in the middle of the page, and then double-click into the iframe `src` (see screenshot below).
 
